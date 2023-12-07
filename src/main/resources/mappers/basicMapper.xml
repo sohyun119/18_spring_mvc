@@ -1,18 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 	
-<mapper namespace="com.spring.mvc.chapter02_mapper.BasicMapper">
+<mapper namespace="basic">
+
+	<!--
 	
 	<select id="ex01" resultType="">
+		SELECT
+			*
+		FROM
+			
 	</select>
 	
-	<insert id="ex03" parameterType="">
+	<select id="ex02" resultType="">
+		SELECT
+			*
+		FROM
+			table
+		WHERE
+			PRIMARY KEY 조건절
+	</select>
+	
+	<insert id="ex03" parameterType="입력데이터 타입">
+		INSERT INTO
+			table
+		VALUES(
+			데이터
+		)
 	</insert>
 	
-	<update id="ex04">
+	<update id="ex04" parameterType="입력데이터 타입">
+		UPDATE
+			table
+		SET
+			data
+		WHERE
+			조건절
 	</update>
 	
-	<delete id="ex05">
+	<delete id="ex05" parameterType="입력데이터 타입">
+		DELETE FROM
+			table
+		WHERE
+			조건절
 	</delete>
+	
+	  -->
 
 </mapper>
