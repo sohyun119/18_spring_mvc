@@ -67,6 +67,8 @@ public class V2C_Ex02 {
 	 *   
 	 *  - Spring을 사용하다보면 클라이언트에서 URL에 파라메타를 같이 전달하는 경우가 생긴다.
 	 *	- 아래와 같이 두 가지 형식으로 url이동과 함께 파라메타값들을 전달할 수 있다.
+
+  * 파라메타 값들을 ? 사용 없이 전달한다. 
 	 *
 	 *		1) http://localhost:8080/mvc/viewToController/transfer5?isProduct='yes'&isSession='no'
 	 *		2) http://localhost:8080/mvc/viewToController/transfer5/yes/no
