@@ -9,7 +9,7 @@
 </head>
 <body>
 
-	<h1>1) 단일 데이터 </h1>
+	<h1>1) *단일 데이터 </h1>
 	<p>enrolldProductCnt : ${enrolledProductCnt }개</p>
 	
 	<hr>
