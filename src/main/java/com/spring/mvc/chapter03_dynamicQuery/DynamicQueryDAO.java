@@ -120,6 +120,8 @@ public class DynamicQueryDAO {
 		
 		String[] brandCdList = {"b100" , "b101" , "b102" , "b103" , "b104" };
 		
+		sqlSession.delete("dynamicQuery.foreachEx03", brandCdList);
+		
 	}
 	
 	

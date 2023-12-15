@@ -137,6 +137,15 @@
 	
 	
 	<!-- [ foreach ] delete 사용예시 -->
+	<delete id="foreachEx03">
+		DELETE FROM
+				BRAND
+		WHERE
+			BRAND_CD IN
+			<foreach item="brandCd" collection="array" open="(" close=")" separator=",">
+				#{brandCd}
+			</foreach>
+	</delete>
 	
 	
 	<!-- [ foreach ] update 사용예시 -->
