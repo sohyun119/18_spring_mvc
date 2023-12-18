@@ -131,7 +131,7 @@ public class DynamicQueryDAO {
 		System.out.println("\n --- foreachEx04 --- \n");
 		
 		int[] productCdList = {1,2,3,4,5,6};
-		
+		sqlSession.update("dynamicQuery.foreachEx04", productCdList);
 		
 	}
 	
@@ -148,6 +148,12 @@ public class DynamicQueryDAO {
 		//productDTO.setProductNm("삼성");
 		productDTO.setBrandCd("b1");
 		
+		List<ProductDTO> productList = sqlSession.selectList("dynamicQuery.whereEx", productDTO);
+		for(ProductDTO product : productList) {
+			System.out.println(product);
+		}
+		
+		
 	}
 	
 	
@@ -161,7 +167,9 @@ public class DynamicQueryDAO {
 		// 2) price만 있을 경우 > 오류
 		// 3) deliveryPrice만 있을 경우 > 정상
 		productDTO.setPrice(1);
-		productDTO.setDeliveryPrice(1);
+		//productDTO.setDeliveryPrice(1);
+		
+		sqlSession.update("dynamicQuery.setEx",productDTO);
 		
 	}
 	
